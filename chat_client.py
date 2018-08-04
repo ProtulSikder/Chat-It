@@ -2,7 +2,7 @@ import socket
 
 s = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
 
-host = "192.168.0.106" #IP address of your server(use ifconfig/ipconfig to find it)
+host = input("Enter the server IP address:") #IP address of your server(use ifconfig/ipconfig to find it)
 port = 5555
 
 s.connect((host,port))
